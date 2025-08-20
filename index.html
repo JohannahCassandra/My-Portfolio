@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Johannah Cassandra A. Jain – Portfolio</title>
+  <meta name="description" content="Portfolio website of Johannah Cassandra A. Jain – Accounting Information System student with part-time experience at Prime Powers Industrial Electric Corporation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='62' fill='%23f1f5f9'/%3E%3Ctext x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-size='64' font-family='Georgia' fill='%23943362'%3EJ%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{--brand:#943362;--muted:#f8f5f7}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    .glass{backdrop-filter:saturate(180%) blur(12px);background:rgba(255,255,255,.6)}
+    .pro-card{box-shadow:0 10px 30px rgba(148,51,98,.08)}
+    .link-underline{background-image:linear-gradient(transparent,transparent),linear-gradient(var(--brand),var(--brand));background-size:0 2px,100% 2px;background-position:0 100%,0 100%;background-repeat:no-repeat;transition:background-size .3s}
+    .link-underline:hover{background-size:100% 2px,100% 2px}
+  </style>
+  <script>
+    // Toggle mobile menu
+    document.addEventListener('DOMContentLoaded',()=>{
+      const btn=document.getElementById('menuBtn');
+      const nav=document.getElementById('mobileNav');
+      btn?.addEventListener('click',()=>nav.classList.toggle('hidden'))
+    })
+  </script>
+  <!-- SEO: Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Johannah Cassandra A. Jain",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bacolod City",
+      "addressRegion": "Negros Occidental",
+      "addressCountry": "PH"
+    },
+    "email": "mailto:jainjohannah120@gmail.com",
+    "telephone": "+63-977-201-9117",
+    "jobTitle": "Accounting Information System Student",
+    "alumniOf": "University of St. La Salle",
+    "knowsAbout": [
+      "Accounting",
+      "Basic Accounting",
+      "Accounting Software",
+      "Clerical Work",
+      "Documentation",
+      "Time Management",
+      "Organization",
+      "Problem Solving"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass border-b border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--brand)] text-white font-semibold">JJ</span>
+        <span class="font-semibold tracking-tight">Johannah C. A. Jain</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-[var(--brand)] link-underline" href="#about">About</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#experience">Experience</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#skills">Skills</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#education">Education</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#references">References</a>
+        <a class="hover:text-[var(--brand)] link-underline" href="#contact">Contact</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menuBtn" class="p-2 rounded-lg border border-slate-200" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-3 grid grid-cols-2 gap-4 text-sm">
+        <a class="py-2" href="#about">About</a>
+        <a class="py-2" href="#experience">Experience</a>
+        <a class="py-2" href="#skills">Skills</a>
+        <a class="py-2" href="#education">Education</a>
+        <a class="py-2" href="#references">References</a>
+        <a class="py-2" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="w-[1200px] h-[1200px] rounded-full bg-[var(--muted)] absolute -top-64 -right-64"></div>
+      <div class="w-[900px] h-[900px] rounded-full bg-[var(--muted)] absolute -bottom-72 -left-72"></div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-14 md:pt-24 relative">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="uppercase tracking-widest text-xs text-slate-500">Accounting • Admin • Documentation</p>
+          <h1 class="mt-3 text-4xl md:text-5xl font-extrabold leading-tight">
+            Hi, I'm <span class="text-[var(--brand)]">Johannah</span>. I bring structure and accuracy to numbers and operations.
+          </h1>
+          <p class="mt-5 text-slate-600 max-w-prose">Based in Brgy. Taculing, Bacolod City, I’m an Accounting Information System student with hands-on experience in clerical work, documentation, and accounting support at Prime Powers Industrial Electric Corporation (2023–2025). I’m motivated, adaptable, and ready to contribute to a professional team.</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a href="assets/JAIN_RESUME.docx" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[var(--brand)] text-white font-medium pro-card">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+              Download Résumé
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-200 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+              Get in touch
+            </a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-sm text-slate-600">
+            <a href="mailto:jainjohannah120@gmail.com" class="link-underline">jainjohannah120@gmail.com</a>
+            <span aria-hidden="true">•</span>
+            <a href="tel:+639772019117" class="link-underline">+63 977 201 9117</a>
+          </div>
+        </div>
+        <div class="md:justify-self-end">
+          <div class="relative w-full max-w-[280px] md:max-w-[320px] mx-auto">
+            <div class="aspect-square rounded-full bg-[var(--muted)] pro-card border border-slate-200 overflow-hidden">
+              <img src="Cassie.jpg" alt="Johannah Cassandra A. Jain" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-4 -left-4 bg-white border border-slate-200 rounded-2xl px-4 py-2 shadow-sm text-xs">Bacolod City, Philippines</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-20 bg-[var(--muted)]/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-bold">About</h2>
+          <p class="mt-2 text-slate-600">A brief professional summary.</p>
+        </div>
+        <div class="md:col-span-2">
+          <div class="prose prose-slate max-w-none">
+            <p>As a highly motivated and adaptable individual, I aim to gain practical experience, improve my capabilities, and grow both personally and professionally. I’m ready to learn and contribute to the success of the company through organized processes, accurate documentation, and solid accounting support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-bold">Experience</h2>
+          <p class="mt-2 text-slate-600">Hands-on work that shaped my skills.</p>
+        </div>
+        <div class="md:col-span-2 space-y-6">
+          <article class="p-6 border border-slate-200 rounded-2xl pro-card">
+            <div class="flex flex-wrap items-baseline justify-between gap-3">
+              <h3 class="text-lg font-semibold">Prime Powers Industrial Electric Corporation</h3>
+              <span class="text-sm text-slate-500">Part-time • 2023 – 2025</span>
+            </div>
+            <ul class="mt-3 list-disc list-inside text-slate-700 space-y-2">
+              <li>Performed clerical tasks and maintained both confidential hard-copy and electronic records.</li>
+              <li>Wrote manual Books of Accounts for BIR compliance.</li>
+              <li>Answered calls and emails, coordinating with internal and external stakeholders.</li>
+              <li>Assisted cross-functional teams and supported day-to-day operations.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 md:py-20 bg-[var(--muted)]/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-bold">Skills</h2>
+          <p class="mt-2 text-slate-600">Tools and strengths I bring to a team.</p>
+        </div>
+        <div class="md:col-span-2">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="p-4 rounded-xl border border-slate-200 bg-white">Analytical & Problem Solving</div>
+            <div class="p-4 rounded-xl border border-slate-200 bg-white">Time Management</div>
+            <div class="p-4 rounded-xl border border-slate-200 bg-white">Organizational Skills</div>
+            <div class="p-4 rounded-xl border border-slate-200 bg-white">Adaptability & Willingness to Learn</div>
+            <div class="p-4 rounded-xl border border-slate-200 bg-white">Proficiency in Accounting Software</div>
+            <div class="p-4 rounded-xl border border-slate-200 bg-white">Basic Accounting</div>
+            <div class="p-4 rounded-xl border border-slate-200 bg-white">Computer Literacy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-bold">Education</h2>
+          <p class="mt-2 text-slate-600">Academic background.</p>
+        </div>
+        <div class="md:col-span-2 space-y-4">
+          <div class="p-6 border border-slate-200 rounded-2xl pro-card">
+            <div class="flex items-center justify-between flex-wrap gap-3">
+              <div>
+                <h3 class="font-semibold">University of St. La Salle</h3>
+                <p class="text-sm text-slate-600">Bachelor of Science in Accounting Information System</p>
+              </div>
+              <span class="text-sm text-slate-500">2023 – 2025</span>
+            </div>
+          </div>
+          <div class="p-6 border border-slate-200 rounded-2xl pro-card">
+            <div class="flex items-center justify-between flex-wrap gap-3">
+              <div>
+                <h3 class="font-semibold">University of St. La Salle</h3>
+                <p class="text-sm text-slate-600">Bachelor of Science in Accountancy</p>
+              </div>
+              <span class="text-sm text-slate-500">2022 – 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section id="references" class="py-16 md:py-20 bg-[var(--muted)]/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-bold">References</h2>
+          <p class="mt-2 text-slate-600">Available for verification.</p>
+        </div>
+        <div class="md:col-span-2 grid sm:grid-cols-2 gap-6">
+          <div class="p-6 border border-slate-200 rounded-2xl bg-white pro-card">
+            <h3 class="font-semibold">April Rose Marcos</h3>
+            <p class="text-sm text-slate-600">Operations Manager, Prime Powers Industrial and Electric Corporation</p>
+            <p class="mt-2 text-sm"><a class="link-underline" href="tel:+639093152185">+63 909 315 2185</a></p>
+          </div>
+          <div class="p-6 border border-slate-200 rounded-2xl bg-white pro-card">
+            <h3 class="font-semibold">Paulaine Jay Boissy</h3>
+            <p class="text-sm text-slate-600">Administrative Head, Prime Powers Industrial and Electric Corporation</p>
+            <p class="mt-2 text-sm"><a class="link-underline" href="tel:+639064818814">+63 906 481 8814</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-bold">Contact</h2>
+          <p class="mt-2 text-slate-600">Let’s connect.</p>
+        </div>
+        <div class="md:col-span-2">
+          <form class="grid sm:grid-cols-2 gap-4" onsubmit="event.preventDefault(); window.location.href=`mailto:jainjohannah120@gmail.com?subject=${encodeURIComponent(document.getElementById('name').value+' — Portfolio Inquiry')}&body=${encodeURIComponent('Hi Johannah,%0D%0A%0D%0A'+document.getElementById('message').value+'%0D%0A%0D%0AFrom,%0D'+document.getElementById('name').value+'%0D'+document.getElementById('email').value)}`;">
+            <div class="sm:col-span-1">
+              <label for="name" class="block text-sm font-medium text-slate-700">Your name</label>
+              <input id="name" type="text" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--brand)]" />
+            </div>
+            <div class="sm:col-span-1">
+              <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+              <input id="email" type="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--brand)]" />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+              <textarea id="message" rows="4" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--brand)]"></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[var(--brand)] text-white font-medium pro-card">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/></svg>
+                Send Message
+              </button>
+            </div>
+          </form>
+          <p class="mt-6 text-sm text-slate-600">Or email me directly at <a class="link-underline" href="mailto:jainjohannah120@gmail.com">jainjohannah120@gmail.com</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-600">
+        <p>© <span id="year"></span> Johannah Cassandra A. Jain. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a class="link-underline" href="tel:+639772019117">+63 977 201 9117</a>
+          <span aria-hidden="true">•</span>
+          <a class="link-underline" href="mailto:jainjohannah120@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
